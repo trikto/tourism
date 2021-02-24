@@ -1,0 +1,44 @@
+.parallax {
+	background-image: url("../../images/Index/section2.jpg");
+	height: 100%;
+	width: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallaxContainer {
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	margin: 0;
+	color: white;
+}
+
+.parallaxContainer h1 {
+	font-weight: normal;
+}
+
+.parallaxContainer p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.parallaxContainer button {
+	height: 60px;
+	width: 140px;
+	border-radius: 20px;
+	background-color: orange;
+	border: none;
+	font-size: 1.1rem;
+	transition: ease 0.5s;
+}
+
+.parallaxContainer button:hover {
+	width: 200px;
+	cursor: pointer;
+	color: white;
+}

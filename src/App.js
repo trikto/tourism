@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "tachyons";
+import Navbar from "./components/Navbar/Navbar.js";
+import Slider from "./components/Slider/Slider.js";
+import ImageText from "./components/ImageText/ImageText.js";
+import AboutUsText from "./components/AboutUsText/AboutUsText.js";
+import ParallaxScroll from "./components/ParallaxScroll/ParallaxScroll.js";
+import MapForm from "./components/MapForm/MapForm.js";
+import Footer from "./components/Footer/Footer.js";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App helvetica">
+			<Navbar />
+			<Slider />
+			<ImageText />
+			<AboutUsText />
+			<ParallaxScroll />
+			<MapForm />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;

@@ -1,0 +1,34 @@
+.aboutContainer {
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+.aboutContainer h1 {
+	font-weight: normal;
+}
+
+.aboutContainer p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.aboutContainer button {
+	height: 60px;
+	width: 140px;
+	border-radius: 20px;
+	background-color: orange;
+	border: none;
+	font-size: 1.1rem;
+	transition: ease 0.5s;
+}
+
+.aboutContainer button:hover {
+	width: 200px;
+	cursor: pointer;
+	color: white;
+}

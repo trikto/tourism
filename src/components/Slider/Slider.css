@@ -1,0 +1,30 @@
+.carouselContainer {
+	position: relative;
+	height: 600px;
+	margin: 0;
+}
+
+.container img {
+	height: 100%;
+	width: 100%;
+}
+
+.carouselText {
+	position: absolute;
+	bottom: 17%;
+	left: 7%;
+	color: white;
+}
+
+.carouselHeading {
+	font-size: 3rem;
+	margin-bottom: 2%;
+}
+
+.slick-dots {
+	bottom: 10%;
+	left: 7%;
+	width: auto;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.01);
+}

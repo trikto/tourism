@@ -1,0 +1,24 @@
+.imgContainer {
+	position: relative;
+	margin-right: 0px;
+	height: 600px;
+}
+
+#sigiriya {
+	height: 100%;
+	width: 60%;
+	float: right;
+}
+
+.imgText {
+	position: absolute;
+	top: 3%;
+	left: 5%;
+	right: 40%;
+	line-height: 1.5;
+}
+
+.imgHeading {
+	font-size: 3rem;
+	margin-bottom: 2%;
+}

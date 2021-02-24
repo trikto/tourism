@@ -1,0 +1,75 @@
+.mapFormContainer {
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+.mapContainer {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
+
+.formContainer {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	float: right;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+}
+
+.formContainer h3 {
+	font-weight: normal;
+}
+
+.formContainer input {
+	width: 100%;
+	margin-top: 3%;
+	line-height: 3rem;
+	border-radius: 10px;
+	border: none;
+	border: solid 1px grey;
+}
+
+.formContainer input::placeholder {
+	padding-left: 10px;
+}
+
+#additionalInfo {
+	line-height: 4rem;
+}
+
+.formContainer button {
+	height: 60px;
+	width: 140px;
+	border-radius: 20px;
+	background-color: orange;
+	border: none;
+	font-size: 1.1rem;
+	transition: ease 0.5s;
+	margin-top: 2%;
+}
+
+.formContainer button:hover {
+	width: 200px;
+	cursor: pointer;
+	color: white;
+}
+
+.contactUsContainer {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.contactUsContainer h1 {
+	font-weight: normal;
+}
+
+.captcha {
+	margin-top: 2%;
+}
