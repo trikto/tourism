@@ -4,20 +4,35 @@ import { SocialIcon } from "react-social-icons";
 import "./Navbar.css";
 
 const Navbar = ({onRouteChange, scrollContact}) => {
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  const nav = document.querySelector(".nav");
+	  const logo = document.querySelector(".logo");
+	  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+	    nav.style.background = "rgba(0,0,0,0.9)";
+	    logo.style.width = "100px";
+	    nav.style.height = "100px";
+	  } else {
+	  	nav.style.background = "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))";
+	  	logo.style.width = "150px";
+	  	nav.style.height = "150px";
+	  }
+	}
 	return (
 		<div className="nav helvetica">
-			<div className="dib ma2 pr3 logo">
-				<img className="logo" src={Logo} height="100px" />
+			<div className="logo">
+				<img className="logo" src={Logo} />
 			</div>
-			<div className="dib dim pointer ma2 navComponent" onClick={() => onRouteChange("home")}>Home</div>
-			<div className="dib dim pointer ma2 navComponent" onClick={() => onRouteChange("about")}>About Us</div>
-			<div className="dib dim pointer ma2 navComponent" onClick={() => onRouteChange("dest")}>Destinations</div>
-			<div className="dib dim pointer ma2 navComponent" onClick={() => onRouteChange("exp")}>Experiences</div>
-				<div className="dib dim pointer ma2 navComponent" onClick={() => onRouteChange("contact")}>Contact Us</div>
-			<div className="dib dim pointer ma2 navComponent">
+			<div className="pointer navComponent" onClick={() => onRouteChange("home")}>Home</div>
+			<div className="pointer navComponent" onClick={() => onRouteChange("about")}>About Us</div>
+			<div className="pointer navComponent" onClick={() => onRouteChange("dest")}>Destinations</div>
+			<div className="pointer navComponent" onClick={() => onRouteChange("exp")}>Experiences</div>
+				<div className="pointer navComponent" onClick={() => onRouteChange("contact")}>Contact Us</div>
+			<div className="pointer navComponent">
 				info@tourism.lk
 			</div>
-			<div className="dib dim pointer ma2 navComponent">
+			<div className="pointer navComponent">
 				+94 77 xxx xxxx
 			</div>
 			<SocialIcon

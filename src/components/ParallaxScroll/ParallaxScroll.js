@@ -1,7 +1,7 @@
 import React from "react";
 import "./ParallaxScroll.css";
 
-const ParallaxScroll = () => {
+const ParallaxScroll = ({onRouteChange}) => {
 	return (
 		<div>
 			<div className="parallax">
@@ -16,7 +16,7 @@ const ParallaxScroll = () => {
 						responsive. They are capable of driving the products and
 						operation excellence in serving the clients.
 					</p>
-					<button>Read More</button>
+					<button onClick={() => onRouteChange("about")}>Read More</button>
 				</div>
 			</div>
 		</div>

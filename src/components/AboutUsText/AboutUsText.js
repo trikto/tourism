@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUsText.css";
 
-const AboutUsText = () => {
+const AboutUsText = ({onRouteChange}) => {
 	return (
 		<div className="aboutContainer">
 			<h1>About Us</h1>
@@ -17,7 +17,7 @@ const AboutUsText = () => {
 				and help them assemble their dream vacation fulfilling the
 				unique and inspiring experiences.
 			</p>
-			<button>Read More</button>
+			<button onClick={() => onRouteChange("about")}>Read More</button>
 		</div>
 	);
 };

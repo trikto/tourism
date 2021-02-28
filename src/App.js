@@ -29,7 +29,13 @@ class App extends Component {
 		anchor.scrollIntoView({behavior:"smooth",block:"center"});
 	}
 
+	scrollTop = () => {
+		const body = document.querySelector("#root");
+		body.scrollIntoView({behavior:"smooth"});
+	}
+
 	componentDidUpdate() {
+		this.scrollTop();
 		if (this.state.route === "contact") {
 			this.scrollContact();
 		}
@@ -43,8 +49,8 @@ class App extends Component {
 					<Navbar onRouteChange={this.onRouteChange} scrollContact={this.scrollContact} />
 					<Slider />
 					<ImageText />
-					<AboutUsText />
-					<ParallaxScroll />
+					<AboutUsText onRouteChange={this.onRouteChange} />
+					<ParallaxScroll onRouteChange={this.onRouteChange} />
 					<MapForm />
 					<Footer />
 				</div>
@@ -65,8 +71,8 @@ class App extends Component {
 					<Navbar onRouteChange={this.onRouteChange}/>
 					<Slider />
 					<ImageText />
-					<AboutUsText />
-					<ParallaxScroll />
+					<AboutUsText onRouteChange={this.onRouteChange} />
+					<ParallaxScroll onRouteChange={this.onRouteChange} />
 					<MapForm />
 					<Footer />
 				</div>
