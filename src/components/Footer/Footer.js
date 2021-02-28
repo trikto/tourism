@@ -13,7 +13,6 @@ import footer3 from "../../images/Index/footer-twitter.png";
 const Footer = () => {
 	return (
 		<div>
-			<div className="emptyDiv"></div>
 			<div className="firstContainer">
 				<div className="border-right">
 					<FontAwesomeIcon className="fa-2x" icon={faCompass} />

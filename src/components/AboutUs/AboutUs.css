@@ -1,0 +1,92 @@
+#aboutUsImageContainer {
+	position: relative;
+	height: 700px;
+	width: 100%;
+	margin: 0;
+}
+
+#aboutUsImageContainer img {
+	height: 100%;
+	width: 100%;
+}
+
+.bottomFade {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	height: 200px;
+	width: 100%;
+}
+
+#bottomFade h1 {
+	font-weight: normal;
+	font-size: 4rem;
+	font-family: "Times New Roman";
+	color: rgba(0, 0, 0, 0.7);
+}
+
+#mapImageContainer {
+	position:relative;
+	height:500px;
+}
+
+#mapImageText {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	right: 40%;
+	line-height: 1.5;
+}
+
+#mapImage {
+	position: relative;
+	height:80%;
+	width:auto;
+	float:right;
+	padding-right: 10%;
+	padding-top:5%;
+}
+
+#whyUsContainer {
+	position: relative;
+	height:200px;
+	margin-bottom:20%;
+}
+
+#whyUsFirst{
+	position: relative;
+	float:left;
+	height:350px;
+	width:55%;
+	overflow: hidden;
+}
+
+#whyUsFirst img {
+	transition:transform 1s ease;
+}
+
+#whyUsFirst:hover img {
+	transform:scale(1.2);
+}
+
+#whyUsSecond {
+	position: absolute;
+	left: 55%;
+	height: 350px;
+	padding-top: 5%;
+	padding-left:2%;
+	padding-right: 2%;
+	background-color: rgba(0,0,0,0.08);
+}
+
+#whyUsSecond h1 {
+	font-weight: normal;
+}
+
+#whyUsSecond p {
+	line-height: 1.3;
+}
