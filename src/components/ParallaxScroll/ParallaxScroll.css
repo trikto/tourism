@@ -20,6 +20,8 @@
 
 .parallaxContainer h1 {
 	font-weight: normal;
+	font-family: "Times New Roman";
+	font-size: 3rem;
 }
 
 .parallaxContainer p {

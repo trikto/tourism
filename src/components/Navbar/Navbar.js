@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Logo from "../../images/Index/logo.png";
-import { SocialIcon } from "react-social-icons";
 import "./Navbar.css";
+import yellowPhone from "../../images/Index/yellowPhone.png";
+import yellowMail from "../../images/Index/yellowMail.png";
 
-const Navbar = ({onRouteChange, scrollContact}) => {
+const Navbar = ({onRouteChange}) => {
+
 	window.onscroll = function() {scrollFunction()};
 
 	function scrollFunction() {
@@ -19,36 +21,60 @@ const Navbar = ({onRouteChange, scrollContact}) => {
 	  	nav.style.height = "150px";
 	  }
 	}
+
+	function openNav() {
+	  document.querySelector(".sideBar").style.width = "250px";
+	}
+
+	/* Set the width of the side navigation to 0 */
+	function closeNav() {
+	  document.querySelector(".sideBar").style.width = "0";
+	}
+
 	return (
-		<div className="nav helvetica">
-			<div className="logo">
+		<div>
+			<ul className="nav helvetica">
+				<li className="logo">
+					<img className="logo" src={Logo} />
+				</li>
+				<li onClick={() => onRouteChange("home")}><a>Home</a></li>
+				<li onClick={() => onRouteChange("about")}><a>About Us</a></li>
+				<li onClick={() => onRouteChange("dest")}><a>Destinations</a></li>
+				<li onClick={() => onRouteChange("exp")}><a>Experiences</a></li>
+				<li onClick={() => onRouteChange("contact")}><a>Contact Us</a></li>
+				<li className="navComponent">
+					<img src={yellowMail} id="yellowMail" />
+					info@tourism.lk
+				</li>
+				<li className="navComponent">
+					<img src={yellowPhone} id="yellowPhone" />
+					+94 77 xxx xxxx
+				</li>
+				<li className="navComponent"> 
+					<i className="fab fa-facebook fa-2x"></i>
+					<i className="fab fa-instagram fa-2x"></i>
+					<i className="fab fa-twitter fa-2x"></i>
+				</li>
+			</ul>
+			<div className="miniNav">
 				<img className="logo" src={Logo} />
+					<i className="fab fa-facebook fa-2x"></i>
+					<i className="fab fa-instagram fa-2x"></i>
+					<i className="fab fa-twitter fa-2x"></i>
+					<div className="equiv" onClick={() => openNav()}>
+					&#9776;
+					</div>
 			</div>
-			<div className="pointer navComponent" onClick={() => onRouteChange("home")}>Home</div>
-			<div className="pointer navComponent" onClick={() => onRouteChange("about")}>About Us</div>
-			<div className="pointer navComponent" onClick={() => onRouteChange("dest")}>Destinations</div>
-			<div className="pointer navComponent" onClick={() => onRouteChange("exp")}>Experiences</div>
-				<div className="pointer navComponent" onClick={() => onRouteChange("contact")}>Contact Us</div>
-			<div className="pointer navComponent">
-				info@tourism.lk
+			<div className="sideBar">
+				<div id="times" onClick={() => closeNav()}>&times;</div>
+				<div onClick={() => onRouteChange("home")}>Home</div>
+				<div onClick={() => onRouteChange("about")}>About Us</div>
+				<div onClick={() => onRouteChange("dest")}>Destinations</div>
+				<div onClick={() => onRouteChange("exp")}>Experiences</div>
+				<div onClick={() => onRouteChange("contact")}>Contact Us</div>
 			</div>
-			<div className="pointer navComponent">
-				+94 77 xxx xxxx
-			</div>
-			<SocialIcon
-				className="grow navComponent"
-				url="https://www.facebook.com"
-			/>
-			<SocialIcon
-				className="grow navComponent"
-				url="https://www.instagram.com"
-			/>
-			<SocialIcon
-				className="grow navComponent"
-				url="https://www.twitter.com"
-			/>
 		</div>
 	);
-};
+}
 
 export default Navbar;

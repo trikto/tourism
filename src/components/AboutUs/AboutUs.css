@@ -85,8 +85,52 @@
 
 #whyUsSecond h1 {
 	font-weight: normal;
+	font-family: "Times New Roman";
+	font-size:2.5rem;
 }
 
 #whyUsSecond p {
 	line-height: 1.3;
+}
+
+@media screen and (max-width:1000px) {
+	#mapImageContainer {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width:100%;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#mapImageText {
+		position:relative;
+		width:100%;
+	}
+
+	#mapImage {
+		height:auto;
+		width: 50%;
+	}
+
+	#whyUsContainer {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		width:100%;
+		height: auto;
+	}
+
+	#whyUsFirst {
+		width:100%;
+		height:auto;
+	}
+
+	#whyUsSecond {
+		position: relative;
+		width:100%;
+		height:auto;
+		left:0;
+	}
 }

@@ -89,3 +89,25 @@
 .expDesign p {
 	line-height: 1.5;
 }
+
+@media screen and (max-width:1000px) {
+	.expContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.rotatedDivLeft{
+		display: none;
+	}
+
+	.rotatedDivRight {
+		display: none;
+	}
+
+	.expDesign {
+		position: relative;
+		background-color:rgba(0,100,0,0.9);
+		width:100%;
+		height: auto;
+	}
+}

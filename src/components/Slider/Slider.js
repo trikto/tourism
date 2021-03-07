@@ -19,35 +19,37 @@ const Slider = () => {
 		autoplaySpeed: 2000,
 	};
 	return (
-		<Carousel className="helvetica" {...settings}>
-			<div className="carouselContainer">
-				<img src={slider1} />
-				<div className="carouselText">
-					<p className="carouselHeading">Step back in time</p>
-					<p>
-						Surrounded by wonderful scenery, lush tea plantations
-						and cool waterfalls...
-					</p>
+		<div className="container"> 
+			<Carousel className="helvetica" {...settings}>
+				<div className="carouselContainer">
+					<img src={slider1} />
+					<div className="carouselText">
+						<p className="carouselHeading">Step back in time</p>
+						<p>
+							Surrounded by wonderful scenery, lush tea plantations
+							and cool waterfalls...
+						</p>
+					</div>
 				</div>
-			</div>
-			<div className="carouselContainer">
-				<img src={slider2} />
-				<div className="carouselText">
-					<p className="carouselHeading">Wildlife safari</p>
-					<p>Harmonize with nature in a wildlife safari...</p>
+				<div className="carouselContainer">
+					<img src={slider2} />
+					<div className="carouselText">
+						<p className="carouselHeading">Wildlife safari</p>
+						<p>Harmonize with nature in a wildlife safari...</p>
+					</div>
 				</div>
-			</div>
-			<div className="carouselContainer">
-				<img src={slider3} />
-				<div className="carouselText">
-					<p className="carouselHeading">Catch the sunset</p>
-					<p>
-						at the beautiful beaches of southern and eastern Sri
-						Lanka...
-					</p>
+				<div className="carouselContainer">
+					<img src={slider3} />
+					<div className="carouselText">
+						<p className="carouselHeading">Catch the sunset</p>
+						<p>
+							at the beautiful beaches of southern and eastern Sri
+							Lanka...
+						</p>
+					</div>
 				</div>
-			</div>
-		</Carousel>
+			</Carousel>
+		</div>
 	);
 };
 

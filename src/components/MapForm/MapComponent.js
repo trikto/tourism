@@ -11,6 +11,7 @@ class MapComponent extends Component {
 			width: "50%",
 			height: "auto",
 		};
+
 		return (
 			<div className="mapContainer">
 				<Map

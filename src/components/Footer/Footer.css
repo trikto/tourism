@@ -15,6 +15,11 @@
 	padding-right: 10%;
 }
 
+.firstContainer div img {
+	width:20%;
+	height:auto;
+}
+
 .border-right {
 	border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -48,4 +53,21 @@
 	height: 100%;
 	width: 100%;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+	.firstContainer {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+
+	.firstContainer div {
+		padding: 20%;
+	}
+
+	.flexDiv div {
+		width:10%;
+		height: auto;
+	}
 }

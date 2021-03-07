@@ -2,6 +2,7 @@
 	position: relative;
 	margin-right: 0px;
 	height: 600px;
+	font-family: "Times New Roman";
 }
 
 #sigiriya {
@@ -16,9 +17,29 @@
 	left: 5%;
 	right: 40%;
 	line-height: 1.5;
+	font-family: Helvetica;
 }
 
 .imgHeading {
 	font-size: 3rem;
 	margin-bottom: 2%;
+}
+
+@media screen and (max-width:1000px) {
+	.imgContainer {
+		display: flex;
+		flex-flow: row wrap;
+		position: relative;
+		width:100%;
+		height: auto;
+	}
+
+	.imgText {
+		position: relative;
+	}
+
+	#sigiriya {
+		height: 100%;
+		width: 100%;
+	}
 }

@@ -1,10 +1,14 @@
+.container {
+	height:600px;
+}
+
 .carouselContainer {
 	position: relative;
 	height: 600px;
 	margin: 0;
 }
 
-.container img {
+.carouselContainer img {
 	height: 100%;
 	width: 100%;
 }
@@ -19,6 +23,7 @@
 .carouselHeading {
 	font-size: 3rem;
 	margin-bottom: 2%;
+	font-family: "Times New Roman";
 }
 
 .slick-dots {

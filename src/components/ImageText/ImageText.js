@@ -5,7 +5,7 @@ import Image from "../../images/Index/section1.jpg";
 const ImageText = () => {
 	return (
 		<div>
-			<div className="helvetica imgContainer">
+			<div className="imgContainer">
 				<img id="sigiriya" src={Image} />
 				<div className="imgText">
 					<p className="imgHeading">Sri Lanka</p>
