@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/tourism/static/css/main.e64d1a21.chunk.css",
-    "main.js": "/tourism/static/js/main.1a8fb9a7.chunk.js",
-    "main.js.map": "/tourism/static/js/main.1a8fb9a7.chunk.js.map",
-    "runtime-main.js": "/tourism/static/js/runtime-main.b8b976dd.js",
-    "runtime-main.js.map": "/tourism/static/js/runtime-main.b8b976dd.js.map",
+    "main.css": "/tourism/static/css/main.259f9a93.chunk.css",
+    "main.js": "/tourism/static/js/main.ad4611a3.chunk.js",
+    "main.js.map": "/tourism/static/js/main.ad4611a3.chunk.js.map",
+    "runtime-main.js": "/tourism/static/js/runtime-main.0f9e4909.js",
+    "runtime-main.js.map": "/tourism/static/js/runtime-main.0f9e4909.js.map",
     "static/css/2.71c0ff4a.chunk.css": "/tourism/static/css/2.71c0ff4a.chunk.css",
-    "static/js/2.fcbaafcb.chunk.js": "/tourism/static/js/2.fcbaafcb.chunk.js",
-    "static/js/2.fcbaafcb.chunk.js.map": "/tourism/static/js/2.fcbaafcb.chunk.js.map",
-    "static/js/3.a18c1acd.chunk.js": "/tourism/static/js/3.a18c1acd.chunk.js",
-    "static/js/3.a18c1acd.chunk.js.map": "/tourism/static/js/3.a18c1acd.chunk.js.map",
+    "static/js/2.fda961bf.chunk.js": "/tourism/static/js/2.fda961bf.chunk.js",
+    "static/js/2.fda961bf.chunk.js.map": "/tourism/static/js/2.fda961bf.chunk.js.map",
+    "static/js/3.907cb430.chunk.js": "/tourism/static/js/3.907cb430.chunk.js",
+    "static/js/3.907cb430.chunk.js.map": "/tourism/static/js/3.907cb430.chunk.js.map",
     "index.html": "/tourism/index.html",
     "static/css/2.71c0ff4a.chunk.css.map": "/tourism/static/css/2.71c0ff4a.chunk.css.map",
-    "static/css/main.e64d1a21.chunk.css.map": "/tourism/static/css/main.e64d1a21.chunk.css.map",
-    "static/js/2.fcbaafcb.chunk.js.LICENSE.txt": "/tourism/static/js/2.fcbaafcb.chunk.js.LICENSE.txt",
+    "static/css/main.259f9a93.chunk.css.map": "/tourism/static/css/main.259f9a93.chunk.css.map",
+    "static/js/2.fda961bf.chunk.js.LICENSE.txt": "/tourism/static/js/2.fda961bf.chunk.js.LICENSE.txt",
     "static/media/about1.5eeccd1c.jpg": "/tourism/static/media/about1.5eeccd1c.jpg",
     "static/media/destinations1.36516229.jpg": "/tourism/static/media/destinations1.36516229.jpg",
     "static/media/destinations10.d2245b5e.jpg": "/tourism/static/media/destinations10.d2245b5e.jpg",
@@ -51,13 +51,16 @@
     "static/media/slick-theme.css": "/tourism/static/media/slick.c94f7671.ttf",
     "static/media/slider1.9637d077.jpg": "/tourism/static/media/slider1.9637d077.jpg",
     "static/media/slider2.2b0aa217.jpg": "/tourism/static/media/slider2.2b0aa217.jpg",
-    "static/media/slider3.a7343a36.jpg": "/tourism/static/media/slider3.a7343a36.jpg"
+    "static/media/slider3.a7343a36.jpg": "/tourism/static/media/slider3.a7343a36.jpg",
+    "static/media/yellowMail.f0bc1a4c.png": "/tourism/static/media/yellowMail.f0bc1a4c.png",
+    "static/media/yellowMarker.ba8fa704.png": "/tourism/static/media/yellowMarker.ba8fa704.png",
+    "static/media/yellowPhone.c750ed39.png": "/tourism/static/media/yellowPhone.c750ed39.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b8b976dd.js",
+    "static/js/runtime-main.0f9e4909.js",
     "static/css/2.71c0ff4a.chunk.css",
-    "static/js/2.fcbaafcb.chunk.js",
-    "static/css/main.e64d1a21.chunk.css",
-    "static/js/main.1a8fb9a7.chunk.js"
+    "static/js/2.fda961bf.chunk.js",
+    "static/css/main.259f9a93.chunk.css",
+    "static/js/main.ad4611a3.chunk.js"
   ]
 }
