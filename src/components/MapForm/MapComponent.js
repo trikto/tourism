@@ -1,16 +1,37 @@
 import React, { Component } from "react";
 import { Map, Marker, GoogleApiWrapper, InfoWindow } from "google-maps-react";
+import { useMediaPredicate } from "react-media-hook";
 
 class MapComponent extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+	    super(props);
+	    this.state = { windowWidth: window.innerWidth };
 	}
 
+ 	handleResize = (e) => {
+	  this.setState({ windowWidth: window.innerWidth });
+	};
+
+	componentDidMount() {
+	  window.addEventListener("resize", this.handleResize);
+	}
+
+	componentWillUnmount() {
+	  window.addEventListener("resize", this.handleResize);
+	} 
+
 	render() {
-		const style = {
+		let style = {
 			width: "50%",
 			height: "auto",
 		};
+
+		if (this.state.windowWidth <= 1000) {
+			style = {
+				width:"100%",
+				height:"auto"
+			}
+		}
 
 		return (
 			<div className="mapContainer">

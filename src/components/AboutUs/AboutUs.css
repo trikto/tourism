@@ -107,6 +107,8 @@
 	#mapImageText {
 		position:relative;
 		width:100%;
+		left:2%;
+		right:2%;
 	}
 
 	#mapImage {

@@ -1,6 +1,7 @@
 .emptyDiv {
 	height: 300px;
 	width: auto;
+	position: relative;
 }
 
 .mapFormContainer {
@@ -79,4 +80,18 @@
 
 .captcha {
 	margin-top: 2%;
+}
+
+@media screen and (max-width:1000px) {
+	.formContainer {
+		position: relative;
+		float: none;
+		margin-top: 150%;
+		width:100%;
+	}
+
+	.emptyDiv {
+		position: relative;
+		height: 700px;
+	}
 }
